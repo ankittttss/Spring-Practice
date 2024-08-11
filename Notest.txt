@@ -1,0 +1,19 @@
+Life Cycle Methods of a Bean -:
+There are various Methods -:
+
+a) Public void init(){}
+b) Public void destroy(){}
+
+Use Cases of init method -:
+1)Initialising Code, Loading Config, Connecting DB, Webservice Etc.
+
+Use Cases of destroy Method -:
+1)Clean up the Code
+
+Note -: We can change the name of these Methods, but we can't change the functionalities here
+
+Life Cycle -:
+
+1) Spring Bean -: In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans.
+A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+We will Metadata file also ie -: Configuration.xml file
