@@ -17,3 +17,45 @@ Life Cycle -:
 1) Spring Bean -: In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans.
 A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
 We will Metadata file also ie -: Configuration.xml file
+
+
+Note -: For Destroy Method in our bean life cycle. we have to use AbstractApplication Context because
+it has register.shutdownhook() method.
+
+Implementing Bean LifeCycle using Interface
+1)Initialising Bean
+2)Disposable Bean
+We will implement methods here
+
+Implementing Bean Lifecycle here using Annotations -:
+1)@postConstruct
+2)@preDestroy
+
+
+*)Autowiring -: Feature of spring Framework in which spring container inject the
+dependencies automatically.
+
+->)Disadvantages -: Autowiring can't be used to inject primitive and string values. It works with references
+only.
+
+*)Can be implemented in two ways -: XML , Annotation
+
+*) If we use XML we have some Autowiring Modes in it
+*) There are different types of Autowiring Modes -;
+
+1)no
+2)byName
+3)byType
+4)constructor -: Deprecated since Spring 3
+
+There are Different type of Annotation also -:
+1) @Autowired
+
+Advantages of Autowiring -:
+1)Automatic
+2)Less Code
+
+Disadvantages of Autowiring -:
+1)No control of Programmer
+2)It can't be used for primitive and string values.
+
